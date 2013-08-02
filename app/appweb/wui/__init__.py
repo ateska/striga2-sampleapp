@@ -8,7 +8,11 @@ class SampleRouter(object): #(striga.router):
 #		self.SessionHandler = striga.sessionhandler(sesid=app.config['SESSION_ID'], lifetime=app.config['SESSION_LIFE_TIME'])
 #		self.UserHandler = striga.userhandler()
 #		self.I18NHandler = striga.i18nhandler()
-		pass
+
+		self.InitAutoDispatch(
+			page1.Page1Controller(),
+			page2.Page2Controller()
+		)
 
 
 	def OnEntry(self, ctx):
@@ -17,10 +21,6 @@ class SampleRouter(object): #(striga.router):
 		self.self.I18NHandler(ctx)
 
 
-	def OnDispatch(self, ctx):
-		#TODO: Implementation of this ...
-		if True:
-			page1.Page1Controller()
-		else:
-			page2.Page2Controller()
-
+#Using auto-dispatch
+#	def OnDispatch(self, ctx):
+#		pass
