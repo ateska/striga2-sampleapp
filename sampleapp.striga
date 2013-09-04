@@ -1,5 +1,5 @@
 #!/usr/bin/env striga
 
 [application]
-parentdir=./src
-appcls=appweb.application.SampleStrigaApplication
+directory=./app
+class=appweb.application.SampleStrigaApplication
