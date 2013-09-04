@@ -19,7 +19,7 @@ class SampleRouter(striga.router):
 	def on_entry(self, ctx):
 		self.SessionHandler(ctx)
 		self.UserHandler(ctx)
-		self.self.I18NHandler(ctx)
+		self.I18NHandler(ctx)
 
 
 #Using auto-dispatch
